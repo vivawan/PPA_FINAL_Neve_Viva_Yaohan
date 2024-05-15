@@ -1,0 +1,5 @@
+"0","nhgis.ds <- get_metadata_nhgis(""datasets"")"
+"0",""
+"0","nhgis.ds |>"
+"0","  filter(group == ""2010 American Community Survey"") |>"
+"0","  select(name, description)"

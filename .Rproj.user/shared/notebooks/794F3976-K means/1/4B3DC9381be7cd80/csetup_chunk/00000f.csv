@@ -1,0 +1,32 @@
+"0","library(ipumsr)"
+"0","library(tidyverse)"
+"0","library(sf)"
+"0","library(stringr)"
+"0","library(cluster)"
+"0","library(factoextra)"
+"2","Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
+"
+"0","library(gridExtra)"
+"0","library(kableExtra)"
+"0","library(tidytext)"
+"0","library(yardstick)"
+"2","Registered S3 method overwritten by 'yardstick':
+  method       from         
+  print.metric spatstat.geom
+"
+"0","library(rsample)"
+"0","library(glmnet)"
+"2","Loading required package: Matrix
+"
+"2","
+Attaching package: ‘Matrix’
+
+"
+"2","The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+"
+"2","Loaded glmnet 4.1-8
+"
+"0","library(broom)"
