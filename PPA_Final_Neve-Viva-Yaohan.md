@@ -1519,7 +1519,7 @@ tracts.mod <- tracts.mod %>%
 # origin
 bike.13 <- read_csv(here::here('data/raw/Divvy_Stations_2013.csv'))
 bike.15 <- read_csv(here::here('data/raw/Divvy_Stations_2015.csv'))  
-bike.20 <- read_csv(here::here('data/raw/Divvy_Stations_2020.csv'))
+bike.20 <- read_csv(unz(here::here('data/raw/202008-divvy-tripdata.zip'), '202008-divvy-tripdata.csv'))
 
 # 2013
 bike.10 <- bike.13%>%
@@ -2891,7 +2891,7 @@ filter(testProbs.thresholds6.20, Threshold == 0.15)  %>%
   geom_text(aes(label = sprintf("%.2f", Value)),                      # Add labels
             position = position_dodge(width = 0.9), vjust = -0.5, size = 3) +
   scale_fill_manual(values = palette2) +
-  labs(title="Confusion matrix rates by predominantly Hispanic or not - 2015",
+  labs(title="Confusion matrix rates by predominantly Hispanic or not - 2020",
        subtitle = "Threshold = 0.15", x = "Outcome",y = "Rate") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
         theme_bw() +
